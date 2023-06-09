@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portofolio | Fiqri Wahyu</title>
     <link rel="stylesheet" href="portofolio.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-light navbar-expand-lg shadow-sm fixed-top" style="background-color: #ffdc9cea">
+    <nav class="navbar navbar-light navbar-expand-lg shadow-sm fixed-top" style="background-color: #ffdc9cea" data-aos="fade-down"></div>
       <div class="container">
         <a class="navbar-brand" href="#">Fiqri wahyu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +37,14 @@
     <!-- Akhir Navbar -->
 
     <!-- jumbotron -->
-    <div class="yuhu text-center">
-      <img src="img/profil.jpg" alt="" width="180" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Fiqri Wahyu</h1>
-      <p class="lead">Junior Front-End Web Developer</p>
+    <div class="yuhu text-center" >
+      <img src="img/profil.jpg" alt="" width="180" class="rounded-circle img-thumbnail" data-aos="zoom-out"
+      data-aos-offset="300"
+              data-aos-duration="800"
+              
+              data-aos-easing="ease-in-sine"/>
+      <h1 class="display-4" data-aos="fade-left" data-aos-offset="300" data-aos-duration="400" data-aos-delay="700" data-aos-easing="ease-in-sine">Fiqri Wahyu</h1>
+      <p class="lead" data-aos="fade-right" data-aos-offset="300" data-aos-duration="400" data-aos-delay="800" data-aos-easing="ease-in-sine">Junior Front-End Web Developer</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -54,14 +59,14 @@
     <div style="padding-top: 50px; margin-top: -50px" id="About">
       <div class="container text-center">
         <div class="row">
-          <div class="col"><h2>about me</h2></div>
+          <div class="col"><h2 data-aos="zoom-in" data-aos-offset="300" data-aos-duration="300" data-aos-easing="ease-in-sine">about me</h2></div>
         </div>
       </div>
       <div style="gap: 15px;" class="row justify-content-center fs-5 text-center mt-3">
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-right" data-aos-offset="300" data-aos-duration="300" data-aos-easing="ease-in-sine">
           <p>Sebagai seorang front-end junior, saya bersemangat untuk mengembangkan kemampuan pengkodean saya. Saya siap untuk belajar dan beradaptasi dengan perkembangan teknologi terkini.</p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-left" data-aos-offset="300" data-aos-duration="300" data-aos-easing="ease-in-sine">
           <p>saya memiliki keahlian dalam menggunakan berbagai teknologi seperti HTML, CSS, dan JavaScript untuk mengembangkan antarmuka pengguna yang interaktif dan menarik secara visual.</p>
         </div>
       </div>
@@ -79,7 +84,7 @@
     <div style="padding-top: 50px" id="projects">
       <div class="container">
         <div class="row text-center">
-          <h2>My Projects</h2>
+          <h2 data-aos="fade-down">My Projects</h2>
         </div>
       </div>
     </div>
@@ -88,49 +93,49 @@
       <div class="kumpulankarya coding" id="coding">
         <div class="judulKarya">
           <div class="line left"></div>
-          <span class="text" data-theme="text-dark">Projek Latihan Coding</span>
+          <span class="text" data-theme="text-dark" data-aos="fade-down">Projek Latihan Coding</span>
           <div class="line right"></div>
         </div>
 
         <div class="karyas" data-theme="color-light-2">
-          <a href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
+          <a data-aos="flip-up" data-aos-delay="100" href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
             <div class="card" data-theme="color-light">
               <div class="thumb" data-thumbnail="img/profil.jpg"></div>
               <div class="judulthumb" data-theme="text-dark">Fitur Website Ganti Warna</div>
             </div>
           </a>
-          <a href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
+          <a data-aos="flip-up" data-aos-delay="200" href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
             <div class="card" data-theme="color-light">
               <div class="thumb" data-thumbnail="img/profil.jpg"></div>
               <div class="judulthumb" data-theme="text-dark">Fitur Website Ganti Warna</div>
             </div>
           </a>
 
-          <a href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
+          <a data-aos="flip-up" data-aos-delay="300" href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
             <div class="card" data-theme="color-light">
               <div class="thumb" data-thumbnail="img/profil.jpg"></div>
               <div class="judulthumb" data-theme="text-dark">Fitur Website Ganti Warna</div>
             </div>
           </a>
-          <a href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
+          <a data-aos="flip-up" data-aos-delay="400" href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
             <div class="card" data-theme="color-light">
               <div class="thumb" data-thumbnail="img/profil.jpg"></div>
               <div class="judulthumb" data-theme="text-dark">Fitur Website Ganti Warna</div>
             </div>
           </a>
-          <a href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
+          <a data-aos="flip-up" data-aos-delay="500" href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
             <div class="card" data-theme="color-light">
               <div class="thumb" data-thumbnail="img/profil.jpg"></div>
               <div class="judulthumb" data-theme="text-dark">Fitur Website Ganti Warna</div>
             </div>
           </a>
-          <a href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
+          <a data-aos="flip-up" data-aos-delay="600" href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
             <div class="card" data-theme="color-light">
               <div class="thumb" data-thumbnail="img/profil.jpg"></div>
               <div class="judulthumb" data-theme="text-dark">Fitur Website Ganti Warna</div>
             </div>
           </a>
-          <a href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
+          <a data-aos="flip-up" data-aos-delay="700" href="https://kamalw13.github.io/webchange-color/" class="karya" target="_blank">
             <div class="card" data-theme="color-light">
               <div class="thumb" data-thumbnail="img/profil.jpg"></div>
               <div class="judulthumb" data-theme="text-dark">Fitur Website Ganti Warna</div>
@@ -143,7 +148,7 @@
     <!-- akhir project -->
 
     <!-- contact me -->
-    <div style="margin-top: 100px" id="contact">
+    <div style="margin-top: 100px" id="contact" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1200">
       <div class="container">
         <div class="row text-center">
           <div class="col mb-3">
@@ -196,6 +201,11 @@
     <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwXg_WubJTIkOZSkevHMLSTD7I4_adWGVbmE2RYYofoqs9JeL-EMPa9LljU9jc4KaDz/exec';
