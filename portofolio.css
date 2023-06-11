@@ -1,6 +1,6 @@
-*{
+* {
   text-decoration: none;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 html {
@@ -32,33 +32,38 @@ body {
   --style-background-gradient: linear-gradient(47deg, var(--background-gradient-1-light), var(--background-gradient-2-light));
   --style-background-gradient-dark: linear-gradient(47deg, #442138, #3b3326);
 }
+
+.nvat {
+  font-family: 'Pacifico', cursive;
+}
 .yuhu {
   padding-top: 5rem;
   background-color: #ffe8bcb3;
+  width: 100%;
 }
 
 #projects {
-  background-color: #ffe8bcb3
+  background-color: #ffe8bcb3;
 }
 
-.isi-content{
+.isi-content {
   padding: 50px 100px;
   position: relative;
   background-color: #ffe8bcb3;
 }
 
-.tipe-karya{
+.tipe-karya {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.judulKarya{
+.judulKarya {
   font-size: 2em;
   margin-bottom: 35px;
 }
 
-.tipe-karya .tipe{
+.tipe-karya .tipe {
   background: var(--style-background-gradient);
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +73,7 @@ body {
   gap: 15px;
 }
 
-.tipe .cardtype{
+.tipe .cardtype {
   background-color: var(--background-light);
   display: flex;
   flex-direction: column;
@@ -77,41 +82,40 @@ body {
   min-width: 200px;
   border-radius: 30px;
   cursor: pointer;
-  color: black
+  color: black;
 }
 
-.tipe .cardtype:hover .gambar{
+.tipe .cardtype:hover .gambar {
   transform: translateY(-35px);
 }
 
-
-.cardtype .gambar{
+.cardtype .gambar {
   background-color: black;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   transform: translateY(-25px);
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
-.kumpulankarya{
+.kumpulankarya {
   margin-top: 20px;
 }
 
-.kumpulankarya .judulKarya{
+.kumpulankarya .judulKarya {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.judulKarya .text{
+.judulKarya .text {
   width: max-content;
   background-color: transparent;
   padding: 0 100px;
 }
 
-.kumpulankarya .judulKarya .line{
+.kumpulankarya .judulKarya .line {
   width: 400px;
   height: 1px;
   position: absolute;
@@ -119,17 +123,17 @@ body {
   align-items: center;
 }
 
-.line.left, 
-.line.right{
+.line.left,
+.line.right {
   z-index: -1;
-} 
+}
 
-.line.left{
+.line.left {
   left: 0;
   background-color: var(--primary-gradient-2);
 }
 
-.line.left::before{
+.line.left::before {
   width: 50px;
   height: 10px;
   content: '';
@@ -138,13 +142,12 @@ body {
   right: 0;
 }
 
-
-.line.right{
+.line.right {
   right: 0;
   background-color: var(--primary-gradient-2);
 }
 
-.line.right::before{
+.line.right::before {
   width: 50px;
   height: 10px;
   content: '';
@@ -153,7 +156,7 @@ body {
   left: 0;
 }
 
-.karyas{
+.karyas {
   background-color: var(--background-light-2);
   padding: 10px;
   border-radius: 25px;
@@ -163,26 +166,26 @@ body {
   gap: 15px;
 }
 
-.karya{
-  background: linear-gradient(-15deg, var(--primary-gradient-1), var(--primary-gradient-2) );
+.karya {
+  background: linear-gradient(-15deg, var(--primary-gradient-1), var(--primary-gradient-2));
   min-width: 250px;
   max-width: 250px;
   padding: 3px;
   border-radius: 25px;
 }
 
-.karya.full{
+.karya.full {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.karya.full:hover{
+.karya.full:hover {
   transform: translateY(-10px);
 }
 
-.karya.full .judulthumb{
+.karya.full .judulthumb {
   display: flex;
   align-items: center;
   font-weight: bolder;
@@ -191,40 +194,39 @@ body {
   color: white;
 }
 
-.karya.full .judulthumb i{
+.karya.full .judulthumb i {
   font-size: 3em;
   margin-bottom: 20px;
 }
 
-.karya.full .judulthumb span{
+.karya.full .judulthumb span {
   text-align: center;
 }
 
-.karyas a{
+.karyas a {
   color: black;
 }
 
-.karya .card{
+.karya .card {
   background-color: white;
   border-radius: 25px;
   padding: 15px;
   height: 100%;
   box-sizing: border-box;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-
-.karya .card .thumb{
+.karya .card .thumb {
   width: 100%;
   background-size: cover;
   border-radius: 25px;
   height: 250px;
-  transition: .3s;
+  transition: 0.3s;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   background-position: center;
 }
 
-.karya .card .judulthumb{
+.karya .card .judulthumb {
   padding: 15px 0;
   font-weight: bold;
   font-size: 1em;
@@ -233,20 +235,63 @@ body {
   flex-direction: column;
 }
 
-.karya:hover .card{
+.karya:hover .card {
   transform: translateY(-35px);
   box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.103);
 }
 
-footer{
+footer {
   padding: 20px;
   background: var(--style-background-gradient);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px
+  gap: 20px;
 }
 
-
-
+@media screen and (max-width: 576px) {
+  .gmbr {
+    width: 160px;
+    height: 160px;
+  }
+  .abtme {
+    font-size: 18px;
+  }
+  .about-me {
+    font-size: 20px;
+  }
+  .about-me2 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .pbot {
+    display: flex;
+    width: 95% !important;
+  }
+  .kumpulankarya .judulKarya .line {
+    width: 130px;
+  }
+  .karyas {
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    width: 300px;
+  }
+  .isi-content {
+    padding: 50px 100px;
+    background-color: #ffe8bcb3;
+    display: flex;
+    justify-content: center;
+  }
+  .cnt{
+    display: flex;
+    justify-content: center !important;
+  }
+  .frm{
+    width: 350px;
+  }
+}
