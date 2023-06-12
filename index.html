@@ -141,10 +141,6 @@
         </div>
         <div class="d-flex justify-content-center">
           <div class="col-6 cnt ">
-            <div class="alert  mi-alert alert-success alert-dismissible fade show d-none" role="alert">
-              <strong>Terima kasih!</strong> pesan berhasil dikirim.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
             <form name="fiqri-contact-me">
               <div class="mb-3 frm">
                 <label for="name" class="form-label" style="color: #ffc524e3;">Nama Lengkap</label>
@@ -162,6 +158,8 @@
               <button style="background-color: #facc8a; border: none" class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
+              </button>
+              <button type="button" class="btn btn-primary" style="display: none;" id="tblmodal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               </button>
             </form>
           </div>
@@ -181,6 +179,16 @@
       </p>
     </footer>
     <!-- akhir footer -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Pesan Diterima</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
 
@@ -197,6 +205,7 @@
       const btnKrim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.mi-alert');
+      const tblmodal = document.getElementById('tblmodal');
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -210,7 +219,7 @@
             btnLoading.classList.toggle('d-none');
             btnKrim.classList.toggle('d-none');
             //tampilkan alert
-            myAlert.classList.toggle('d-none');
+            tblmodal.click();
             //reset form
             form.reset();
             console.log;
